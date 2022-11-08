@@ -44,3 +44,21 @@ We are 5 students and we’re going to do a Web Development project in this repo
 - User
 - Password
 - ID (unique ID on all instances : domain name / number)
+
+
+# Explanation on the code structure
+
+cover_pictures : in this folder we will save the pictures for the cover page of a user.
+
+DB-annex : we will find sql files that allow us to create a database.
+
+images_posted : images that are used in the post of our users.
+
+includes : codes that will be used many times need will be stored in this folder, facilitating the code flow.
+
+profile_pictures : store the profile pictures.
+
+style : store all the css files.
+
+web_functions : all the js functions that we will use for the website.
+
