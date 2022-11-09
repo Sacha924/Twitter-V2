@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700,600,800");
+
+body {
+  overflow-x: hidden;
+}
+.well {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+.flex-row {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  gap: 656px;
+  height: 483px;
+  margin-left: -71px;
+  margin-top: 152px;
+  min-width: 1655px;
+}
+
+.flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  min-height: 483px;
+  width: 539px;
+}
+.tagline {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-right: 29px;
+  min-height: 89px;
+  text-align: center;
+  width: 336px;
+}
+.black {
+  color: black;
+}
+.red {
+  color: #ff0000;
+}
+.green {
+  color: #23ff00;
+  font-size: 40px;
+}
+.blue {
+  color: #0093ff;
+}
+
+.advertising {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  height: 90px;
+  left: 10%;
+  position: absolute;
+  bottom: 10%;
+}
+.overlap-adv {
+  height: 52px;
+  position: relative;
+  width: 100px;
+}
+.users_number {
+  color: rgba(19 108, 242, 0.8);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.active-users {
+  color: #35393c;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.ellipse {
+  height: 82px;
+  margin-bottom: -6px;
+  margin-left: -20px;
+  margin-top: -6px;
+  min-width: 82px;
+  object-fit: cover;
+}
+
+.welcome_image {
+  height: 250px;
+  margin-top: 9px;
+  object-fit: cover;
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+.loggin-form {
+  position: absolute;
+  left: 41%;
+  width: 25%;
+  top: 30%;
+}

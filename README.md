@@ -52,6 +52,8 @@ cover_pictures : in this folder we will save the pictures for the cover page of 
 
 DB-annex : we will find sql files that allow us to create a database.
 
+images_for_design : images like logos, ... Everything we need for the design
+
 images_posted : images that are used in the post of our users.
 
 includes : codes that will be used many times need will be stored in this folder, facilitating the code flow.
