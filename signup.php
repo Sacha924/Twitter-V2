@@ -33,6 +33,11 @@
                     <form method="post" action="">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" name="username"
+                                required="required">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
                             <input type="text" class="form-control" placeholder="First Name" name="first_name"
                                 required="required">
                         </div><br>
@@ -57,8 +62,7 @@
 
                         <button id="signup" class="btn btn-info btn-lg" name="sign_up">Signup</button>
                         <?php 
-                        // include("insert_user.php"); 
-                        // Will be used to add the user in our database
+                        include("add_user.php"); 
                         ?>
                     </form>
                 </div>

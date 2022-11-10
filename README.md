@@ -68,3 +68,9 @@ web_functions : all the js functions that we will use for the website.
 ## Files
 
 main.php : the homepage on which the user will go before connecting to the website
+
+signup.php : 
+
+connection.php : establish the connection with the database
+
+add_user.php : add the user in the database when he sign
