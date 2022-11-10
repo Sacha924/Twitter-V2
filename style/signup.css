@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+.well {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+h3{
+    text-align: center;
+}
+a{
+    float: right;
+    color: rgb(34, 175, 175)
+}
+.main-content{
+    width: 55%;
+    height: 45%;
+    margin: 8px auto;
+    background-color: #fff;
+    border: 2px solid #e6e6e6;
+    padding: 40px 50px;
+}
+.header{
+    border: 0px solid #000;
+    margin-bottom: 5px;
+}
+
+#signup{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 30px;
+}

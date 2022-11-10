@@ -46,13 +46,24 @@
     </div>
 
     <div class="loggin-form">
-        <form method=" post" action="">
+        <form method="post" action="">
             <div class="col-sm-6">
                 <button id="signup" class="btn btn-info btn-lg" name="signup">Sign
-                    up</button><br><br>
+                    up</button><br /><br />
+                <?php
+                    if(isset($_POST['signup'])){
+                        echo "<script>window.open('signup.php','_self')</script>"; 
+                        // with the '_self' URL replaces the current page
+                    }
+                    ?>
             </div>
             <div class="col-sm-6">
-                <button id="login" class="btn btn-info btn-lg" name="login">Login</button><br><br>
+                <button id="login" class="btn btn-info btn-lg" name="login">Login</button><br /><br />
+                <?php
+                    if(isset($_POST['login'])){
+                        echo "<script>window.open('signin.php','_self')</script>"; 
+                    }
+                    ?>
             </div>
         </form>
     </div>

@@ -1,8 +1,8 @@
-# Web Development Project 
+# Web Development Project
 
-## Creation of a Social Network 
+## Creation of a Social Network
 
-We are 5 students and we’re going to do a Web Development project in this repo. We have to create a light social network like Twitter or Mastodon for micro blogging. The minimal features of our social media are : 
+We are 5 students and we’re going to do a Web Development project in this repo. We have to create a light social network like Twitter or Mastodon for micro blogging. The minimal features of our social media are :
 
 - [ ] User / Password
 - [ ] SignUp
@@ -45,8 +45,9 @@ We are 5 students and we’re going to do a Web Development project in this repo
 - Password
 - ID (unique ID on all instances : domain name / number)
 
-
 # Explanation on the code structure
+
+## Folders
 
 cover_pictures : in this folder we will save the pictures for the cover page of a user.
 
@@ -64,3 +65,6 @@ style : store all the css files.
 
 web_functions : all the js functions that we will use for the website.
 
+## Files
+
+main.php : the homepage on which the user will go before connecting to the website
