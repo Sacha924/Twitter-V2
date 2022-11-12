@@ -1,107 +1,179 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:700,600,800");
 
-body {
-  overflow-x: hidden;
-}
-.well {
-  background-color: blue;
-  color: white;
-  text-align: center;
-}
-
-.flex-row {
-  align-items: flex-start;
-  align-self: flex-start;
-  display: flex;
-  gap: 656px;
-  height: 483px;
-  margin-left: -71px;
-  margin-top: 152px;
-  min-width: 1655px;
+html,
+body,
+.MainContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-.flex-col {
-  align-items: flex-end;
+.MainContainer {
   display: flex;
   flex-direction: column;
-  gap: 84px;
-  min-height: 483px;
-  width: 539px;
-}
-.tagline {
-  font-family: "Inter";
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-right: 29px;
-  min-height: 89px;
-  text-align: center;
-  width: 336px;
-}
-.black {
-  color: black;
-}
-.red {
-  color: #ff0000;
-}
-.green {
-  color: #23ff00;
-  font-size: 40px;
-}
-.blue {
-  color: #0093ff;
 }
 
-.advertising {
-  align-items: center;
+.NavBarContainer {
   display: flex;
-  gap: 5px;
-  height: 90px;
-  left: 10%;
-  position: absolute;
-  bottom: 10%;
+  height: 110px;
+  background: #068d9d;
+  margin-bottom: 90px;
 }
-.overlap-adv {
-  height: 52px;
-  position: relative;
-  width: 100px;
+
+.ContentContainer {
+  display: flex;
+  flex: 1;
 }
-.users_number {
-  color: rgba(19 108, 242, 0.8);
-  font-family: "Inter";
+
+.WebsiteHead {
+  display: flex;
+  align-items: center;
+}
+
+.PagesContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  margin: 0% 12% 0% 12%;
+}
+.Page {
+  color: #aeecef;
+  font-family: Inter;
+  font-style: Semi Bold;
   font-size: 24px;
-  font-weight: 700;
-  line-height: normal;
+  line-height: 16px;
+  line-height: 55%;
 }
-.active-users {
-  color: #35393c;
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 26px;
+.ButtonsContainer {
+  display: flex;
+  height: 100%;
+  margin-top: 1.5%;
+  gap: 15px;
+}
+#signup {
+  width: 148px;
+  height: 48px;
+  border: 4px;
+  border-radius: 25px;
+  color: #80ded9;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 24px;
+  line-height: 16px;
+  line-height: 55%;
+  vertical-align: Center;
+  background: #068d9d;
+  outline: 3.5px solid #80ded9;
+}
+#login {
+  width: 148px;
+  height: 48px;
+  border: 4px;
+  border-radius: 25px;
+  color: #53599a;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 24px;
+  line-height: 16px;
+  line-height: 55%;
+  vertical-align: Center;
+  background: #aeecef;
+  outline: 3.5px solid #80ded9;
+}
+.WebsiteName {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 58px;
+  color: #aeecef;
+  text-align: center;
+}
+.TextContent {
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  align-content: space-between;
+  align-items: flex-end;
+}
+.CTATitle {
+  display: flex;
+  height: 30%;
+  color: #e56399;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 17% 5% 10% 0%;
+  font-family: Jost;
+  font-style: Regular;
+  font-size: 106px;
+  line-height: 32px;
+  line-height: 23%;
+  vertical-align: Top;
+  letter-spacing: 8%;
+}
+.CTAButton {
+  background: #53599a;
+  color: #aeecef;
+  border-radius: 60px;
+  width: 346px;
+  height: 72px;
+  display: flex;
+  margin-right: 5%;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 36px;
 }
 
-.ellipse {
-  height: 82px;
-  margin-bottom: -6px;
-  margin-left: -20px;
-  margin-top: -6px;
-  min-width: 82px;
-  object-fit: cover;
+.AvatarImage1 {
+  position: absolute;
+  top: 0px;
+  left: 270px;
+}
+.AvatarImage2 {
+  position: absolute;
+  top: 320px;
+  left: 200px;
+  z-index: 1;
+}
+.AvatarImage3 {
+  position: absolute;
+  top: 160px;
+  left: 150px;
+}
+.AvatarImage4 {
+  position: absolute;
+  top: 150px;
+  left: 360px;
+}
+.BullesContainer {
+  flex: 1;
+  position: relative;
+}
+.Advertising {
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 170px;
+  left: 520px;
+  align-items: center;
+  background-color: #aeecef;
+  border-radius: 0 40px 40px 40px;
+  vertical-align: 100px;
 }
 
-.welcome_image {
-  height: 250px;
-  margin-top: 9px;
-  object-fit: cover;
-  width: 250px;
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
+.Span1 {
+  font-size: 64px;
+  color: #068d9d;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
 }
-.loggin-form {
-  position: absolute;
-  left: 41%;
-  width: 25%;
-  top: 30%;
+.Span2 {
+  color: black;
+  font-size: 36px;
 }
