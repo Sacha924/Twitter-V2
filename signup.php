@@ -18,7 +18,6 @@
         <div class="col-sm-12">
             <div class="well">
                 <h1>WebPage_Title</h1>
-
             </div>
         </div>
     </div>
