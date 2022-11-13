@@ -41,6 +41,7 @@
 
                         <button id="signin" class="btn btn-info btn-lg" name="login">Login</button>
                         <?php 
+                        session_start();
                         include("includes/connection.php");
                         if(isset($_POST['login'])){
                             $email = htmlentities(mysqli_real_escape_string($con,$_POST["u_email"]));
