@@ -50,7 +50,8 @@
                             if($check_user == 1){
                                 // Session variables are shared by all PHP pages in a session (accessed from the same browser). They allow the passage of information between pages.
                                 $_SESSION['user_email'] = $email;
-                                echo "<script>window.open('app.php', '_self')</script>";
+                                // echo "<script>window.location.href='profile.php'</script>";
+                                echo "<script>window.open('profile.php', '_self')</script>";
                             }else{
                                 echo"<script>alert('Your email or password is incorrect, try again')</script>";
                             }
