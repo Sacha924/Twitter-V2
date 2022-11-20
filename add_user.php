@@ -12,8 +12,8 @@ if(isset($_POST['sign_up'])){
     $password = htmlentities(mysqli_real_escape_string($con,$_POST["u_pass"]));
     $biography="Welcome on my profile, this is my default status !";
     $relationship= ".";
-    $profile_picture = "default_cover.png";
-    $cover_picture = "default_profile.png";
+    $profile_picture = "default_profile.png";
+    $cover_picture = "default_cover.png";
     // $reg_date directly define in our insert values 
     $posts = "no";
     
