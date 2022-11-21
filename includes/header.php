@@ -68,7 +68,7 @@ include("includes/connection.php");
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <form class="navbar-form navbar-left" method="get" action="results.php">
+                    <form class="navbar-form navbar-left" method="get" action="results.php" style="margin-left:500px">
                         <div class="form-group">
                             <input type="text" class="form-control" name="user_query" placeholder="Search">
                         </div>

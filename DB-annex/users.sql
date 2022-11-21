@@ -23,6 +23,7 @@ CREATE TABLE `posts` (
   `post_content` varchar(255) NOT NULL,
   `upload_image` varchar(255) NOT NULL,
   `post_date` timestamp NOT NULL DEFAULT current_timestamp()
+  -- may add likes and dislikes later
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ALTER TABLE `posts`

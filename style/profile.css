@@ -1,0 +1,33 @@
+label {
+  padding: 7px;
+  display: table;
+  color: #fff;
+}
+input[type="file"] {
+  display: none;
+}
+#cover-img {
+  height: 400px;
+  width: 100%;
+}
+#profile-img {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+}
+#update_profile {
+  position: relative;
+  top: -33px;
+  cursor: pointer;
+  left: 93px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%);
+}
+#button_profile {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
