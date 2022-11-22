@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 label {
   padding: 7px;
   display: table;
@@ -31,3 +35,4 @@ input[type="file"] {
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
+
