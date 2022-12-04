@@ -62,6 +62,60 @@ if(!isset($_SESSION['user_email'])){
 			";
 		?>
 
+            <?php
+
+        if(isset($_POST['submit'])){
+
+            $u_cover = $_FILES['u_cover']['name'];
+            $image_tmp = $_FILES['u_cover']['tmp_name'];
+            $random_number = rand(1,100000);
+
+            if($u_cover==''){
+                echo "<script>alert('Please select a cover image'</script>";
+                echo "<script>window.open('profile.php?u_id=$user_ID' , '_self')</script>";
+                exit();
+            }else {
+                move_uploaded_file($image_tmp, "cover_pictures/$u_cover.$random_number");
+                $update = "update users set cover_picture='$u_cover.$random_number' where user_ID='$user_ID'";
+
+                $run = mysqli_query($con, $update);
+
+                if($run){
+                    echo "<script>alert('Your cover has been updated'</script>";
+                    echo "<script>window.open('profile.php?u_id=$user_ID' , '_self')</script>";
+                }
+            }
+        }
+        ?>
+        </div>
+        <?php
+            if(isset($_POST['update'])){
+
+                $u_image = $_FILES['u_image']['name'];
+                $image_tmp = $_FILES['u_image']['tmp_name'];
+                $random_number = rand(1,100000);
+
+                if($u_image==''){
+                    echo "<script>alert('Please select a profil image by clicking on your profile image'</script>";
+                    echo "<script>window.open('profile.php?u_id=$user_ID' , '_self')</script>";
+                    exit();
+                }else {
+                    move_uploaded_file($image_tmp, "profile_pictures/$u_image.$random_number");
+                    $update = "update users set profil_picture='$u_image.$random_number' where user_ID='$user_ID'";
+
+                    $run = mysqli_query($con, $update);
+
+                    if($run){
+                        echo "<script>alert('Your Profil image has been updated'</script>";
+                        echo "<script>window.open('profile.php?u_id=$user_ID' , '_self')</script>";
+                    }
+                }
+            }
+    ?>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
 </body>
 
 </html>
