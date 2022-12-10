@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700,600,800");
+
+html,
+body,
+.MainContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #E4D6BE;
+}
+
+
+
+.NavBarContainer {
+  display: flex;
+  height: 110px;
+  background: #068d9d;
+  margin-bottom: 90px;
+}
+
+.ButtonsContainer {
+  height: 100%;
+  margin-top: 1.5%;
+  margin-left: 10%;
+  gap: 15px;
+  flex : 6;
+}
+#signup {
+  width: 100px;
+  height: 40px;
+  border: 4px;
+  border-radius: 15px;
+  color: #f5f5f5;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 16px;
+  line-height: 55%;
+  vertical-align : Center;
+  background: #040404;
+}
+#login {
+  width: 100px;
+  height: 40px;
+  border: 4px;
+  border-radius: 15px;
+  color: #fcfcfc;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 16px;
+  line-height: 55%;
+  vertical-align: Center;
+  background: #000000;
+}
+.features {
+  width: 100px;
+  height: 40px;
+  border: 4px;
+  border-radius: 15px;
+  color: #0f2e2e;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 16px;
+  line-height: 90%;
+  vertical-align: Center;
+  background: #80ded9;
+}
+
+
+.WebsiteIcon {
+  width: 200px;
+  height: 100px;
+  margin : 1.4% 10% 0% 3%;
+  flex : 1;
+}
+
+.BullesContainer {
+  flex: 1;
+  position: relative;
+}
+
+.Title {
+  color: black;
+  font-size: 250%;
+  text-align: center;
+  margin : 10% 0% 0% 0%;
+}
+
+.Corpus {
+  text-align: center;
+  font-size: 160%;
+}
+
+
+.Corpus_Small {
+  text-align: center;
+  margin: 10% 5% 5% 5%;
+  box-sizing: content-box;
+  font-size: 150%;
+  line-height: 120%;
+}
+
+#Top {
+  display: flex;
+  flex : 1;
+  align-self: center;
+}
+
+.Left {
+  width  : 700%;
+  margin: 2% 8% 0 15%;
+}
+
+.Right {
+  width  : 300%;
+  margin: 4% 20% 0 8%;
+}
+
+.LeftImage {
+  width  : 2%;
+  margin: 4% 8% 0 15%;
+  flex : 1;
+  border-radius:12%;
+}
+
+.LeftName {
+  width  : 100%;
+  margin: 11% 15% 0 15%;
+  flex : 2;
+}
+
+.RightName {
+  width  : 100%;
+  margin: 8% 12% 0 15%;
+  flex : 2;
+}
+
+.RightImage {
+  width  : 100%;
+  margin: 8% 15% 0 15%;
+  flex : 1
+}
+
+.container_col {
+  display: flex;
+  margin : 0% 0% 5% 0%;
+}
+
+.col-sm-2 {
+  margin: 0% 3% 0% 0%;
+}
+
+
+.Footer {
+  margin: 2% 0 2% 0;
+  background-color: grey;
+}

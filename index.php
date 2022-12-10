@@ -14,48 +14,54 @@
 
 <body>
 
-    <div class="MainContainer">
-        <div class="NavBarContainer">
-            <div class="WebsiteHead">
+  
+<div class="MainContainer">
+        <div class="NavBarContainer">       
                 <div class="WebsiteIcon">
-                    <svg width="65" height="55" viewBox="0 0 65 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M32.5 0L40.0212 20.7295H64.3604L44.6696 33.541L52.1908 54.2705L32.5 41.459L12.8092 54.2705L20.3304 33.541L0.639606 20.7295H24.9788L32.5 0Z"
-                            fill="#AEECEF" />
-                    </svg>
+                    <img src="./images_for_design/image_LogoONNLINE.png" style="width:130%;border-radius:12%;"/>
                 </div>
-                <div class="WebsiteName">Social Network Name</div>
+                
+            
+                <div class="ButtonsContainer">
+                        <form method="post" action="">
+                            
+                            <div class="col-sm-2">
+                                <button class="features" name="about_us">About us</button><br /><br />
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="features" name="rate_the_app">Rate the App</button><br /><br />
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="features" name="future_updates">Future Updates</button><br /><br />
+                            </div>
+                            <div class="col-sm-2">
+                                <button id="signup" name="signup">Sign up</button><br /><br />
+                            </div>
+                            <div class="col-sm-2">
+                                <button id="login" name="login">Login</button><br /><br />
+                            </div>
+                        </form>
+                </div>
             </div>
-            <div class="PagesContainer">
-                <div class="Page">About us</div>
-                <div class="Page">Rate the app</div>
-                <div class="Page">Future Updates</div>
-            </div>
-            <div class="ButtonsContainer">
-                <div class="loggin-form">
-                    <form method="post" action="">
-                        <div class="col-sm-6">
-                            <button id="signup" name="signup">Sign up</button><br /><br />
-                            <?php
-                    if(isset($_POST['signup'])){
-                        echo "<script>window.open('signup.php','_self')</script>"; 
+                <?php
+                    if(isset($_POST['rate_the_app'])){
+                        echo "<script>window.open('./landing_page_features/rate_the_app.php','_self')</script>"; 
                         // with the '_self' URL replaces the current page
                     }
-                    ?>
-                        </div>
-                        <div class="col-sm-6">
-                            <button id="login" name="login">Login</button><br /><br />
-                            <?php
-                    if(isset($_POST['login'])){
-                        echo "<script>window.open('signin.php','_self')</script>"; 
+                    if(isset($_POST['about_us'])){
+                        echo "<script>window.open('./landing_page_features/about_us.php','_self')</script>"; 
                     }
-                    ?>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
+                    if(isset($_POST['future_updates'])){
+                        echo "<script>window.open('./landing_page_features/future_updates.php','_self')</script>"; 
+                    }
+                    if(isset($_POST['signup'])){
+                        echo "<script>window.open('./signup.php','_self')</script>"; 
+                    }
+                    if(isset($_POST['login'])){
+                        echo "<script>window.open('./signin.php','_self')</script>"; 
+                    }
+                ?>
+                                    
         <div class="ContentContainer">
             <div class="PreviewImage"><svg width="449" height="529" viewBox="0 0 449 529" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -74,8 +80,7 @@
                 <div class="AvatarImage2"><img src="images_for_design/profil-2.png" /></div>
                 <div class="AvatarImage3"><img src="images_for_design/profil-3.png" /></div>
                 <div class="AvatarImage4"><img src="images_for_design/profil-4.png" /></div>
-                <div class="Advertising"><span class="Span1">+ 1000 </span><span class="Span2">actives users</span>
-                </div>
+                
             </div>
             <div class="TextContent">
                 <div class=" CTATitle">
@@ -83,7 +88,6 @@
                     <div>Friends</div>
                     <div>Everywhere</div>
                 </div>
-                <div class="CTAButton">Join WEBSITE</div>
             </div>
         </div>
     </div>
