@@ -1,6 +1,6 @@
 <?php
 include("includes/connection.php");
-//include("functions/functions.php");
+include("functions/functions.php");
 //we don't start the session on this file because we will start the session on the other files that this file can call
 ?>
 <nav class="navbar navbar-default">
