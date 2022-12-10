@@ -4,10 +4,10 @@
 
 We are 5 students and we’re going to do a Web Development project in this repo. We have to create a light social network like Twitter or Mastodon for micro blogging. The minimal features of our social media are :
 
-- [ ] User / Password
-- [ ] SignUp
-- [ ] SignIn
-- [ ] LogOut
+- [x] User / Password
+- [x] SignUp
+- [x] SignIn
+- [x] LogOut
 - [ ] Post Messages
 - [ ] Post answers to a message
 - [ ] Post Images (optionnal)
@@ -27,7 +27,7 @@ We are 5 students and we’re going to do a Web Development project in this repo
 
 ## Our public website has to contain several pages :
 
-- [ ] Homepage ( not connected User, SignUp / LogIn )
+- [x] Homepage ( not connected User, SignUp / LogIn )
 - [ ] Home for a conected user ⇒ timeline
 - [ ] Profile Page for a User ( connected User, his followers/following or anybody else in the same instance/software from the fediverse )
 - [ ] User search Page or form to Display the Profile of a User (username@domainname)
@@ -67,7 +67,7 @@ web_functions : all the js functions that we will use for the website.
 
 ## Files
 
-main.php : the homepage on which the user will go before connecting to the website
+index.php : the homepage on which the user will go before connecting to the website
 
 signup.php / signin.php : their names tell what they do
 
@@ -75,4 +75,8 @@ connection.php : establish the connection with the database
 
 add_user.php : add the user in the database when he sign
 
-app.php
+app.php : temp
+
+profile.php : user profile on the website
+
+connection.php and header.php : both in the includes folder, connection.php allows us to connect to the DB, and header.php is our nav-bat to navigate inside the app (so it's the header of all the files).
