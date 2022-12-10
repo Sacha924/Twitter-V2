@@ -1,5 +1,5 @@
-body{
-  overflow-x:hidden;
+body {
+  overflow-x: hidden;
 }
 label {
   padding: 7px;
@@ -16,13 +16,13 @@ input[type="file"] {
 #profile-img {
   position: absolute;
   top: 160px;
-  left: 40px;
+  left: 8%;
 }
 #update_profile {
   position: relative;
   top: -33px;
   cursor: pointer;
-  left: 93px;
+  left: 40%;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.1);
   transform: translate(-50%, -50%);
@@ -30,7 +30,21 @@ input[type="file"] {
 #button_profile {
   position: absolute;
   top: 82%;
-  left: 50%;
+  left: 40%;
   cursor: pointer;
   transform: translate(-50%, -50%);
+}
+#changeCover {
+  margin-top: 15%;
+  position: relative;
+  top: 140%;
+  left: 137%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+#user_infos {
+  background-color: #e6e6e6;
+  text-align: center;
+  left: 5%;
+  border-radius: 5px;
 }

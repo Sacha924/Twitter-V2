@@ -37,7 +37,7 @@ if(!isset($_SESSION['user_email'])){
                     <form action='profile.php?u_id=$user_ID' method='post' enctype='multipart/form-data'>
                     <ul class='nav pull-left'>
                         <li class='dropdown'>
-                            <button class='dropdown-toggle btn btn-default' data-toggle='dropdown'>Change Cover</button>
+                            <button class='dropdown-toggle btn btn-default' data-toggle='dropdown' id ='changeCover'>Change Cover</button>
                             <div class='dropdown-menu'>
                                 <p>Click <strong>Select Cover</strong> and then click the <br> <strong>Update Cover</strong></p>
                                 <label class='btn btn-info'> Select Cover
@@ -112,9 +112,23 @@ if(!isset($_SESSION['user_email'])){
                 }
             }
     ?>
-    </div>
-    <div class="col-sm-2">
+        <div class="col-sm-2">
 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-2" id="user_infos">
+            <?php
+		echo"<h2><strong>About</strong></h2>
+			<h4><strong>$first_name $last_name</strong></h4>
+			<p><strong><i style='color:grey;'>$biography</i></strong></p><br>
+			<p><strong>Relationship Status: </strong> $Relationship_status</p><br>
+			<p><strong>Member Since: </strong> $register_date</p><br>";
+		?>
+        </div>
     </div>
 </body>
 

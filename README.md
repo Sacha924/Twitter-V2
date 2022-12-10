@@ -79,4 +79,4 @@ app.php : temp
 
 profile.php : user profile on the website
 
-connection.php and header.php : both in the includes folder, connection.php allows us to connect to the DB, and header.php is our nav-bat to navigate inside the app (so it's the header of all the files).
+connection.php and header.php : both in the includes folder, connection.php allows us to connect to the DB, and header.php is our nav-bat to navigate inside the app (so it's the header of all the files). Header also gets all the info of the user from the DB.
