@@ -63,7 +63,7 @@ profile_pictures : store the profile pictures.
 
 style : store all the css files.
 
-web_functions : all the js functions that we will use for the website.
+functions : all the functions that we will use for the website.
 
 ## Files
 
