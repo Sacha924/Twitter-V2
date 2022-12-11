@@ -45,6 +45,14 @@ input[type="file"] {
 #user_infos {
   background-color: #e6e6e6;
   text-align: center;
-  left: 5%;
+  left: 0.8%;
   border-radius: 5px;
+}
+#own_posts {
+  border: 5px solid #e6e6e6;
+  padding: 40px 50px;
+}
+#posts_img {
+  height: 300px;
+  width: 100%;
 }
