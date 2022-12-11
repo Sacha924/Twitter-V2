@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "grp12tlen89k81w";
-$password = "A37kmRIKUa"; 
+$username = "";
+$password = ""; 
 $database = "mygrp1";
 
 
