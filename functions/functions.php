@@ -474,7 +474,7 @@ function user_posts(){
 							<p><img src='profile_pictures/$profil_picture' class='img-circle' width='100px' height='100px'></p>
 							</div>
 							<div class='col-sm-6'>
-								<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='user_profile.php?u_id=$user_ID'>$user_name</a></h3>
+								<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='user_profile.php?u_id=$user_ID'>$username</a></h3>
 								<h4><small style='color:black;'>Updated a post on <strong>$post_date</strong></small></h4>
 							</div>
 							<div class='col-sm-4'>
@@ -504,7 +504,7 @@ function user_posts(){
 							<p><img src='profile_pictures/$profil_picture' class='img-circle' width='100px' height='100px'></p>
 							</div>
 							<div class='col-sm-6'>
-								<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='user_profile.php?u_id=$user_ID'>$user_name</a></h3>
+								<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='user_profile.php?u_id=$user_ID'>$username</a></h3>
 								<h4><small style='color:black;'>Updated a post on <strong>$post_date</strong></small></h4>
 							</div>
 							<div class='col-sm-4'>
