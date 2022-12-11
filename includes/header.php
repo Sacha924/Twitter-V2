@@ -1,5 +1,5 @@
 <?php
-include("includes/connection.php");
+include("connection.php");
 include("functions/functions.php");
 //we don't start the session on this file because we will start the session on the other files that this file can call
 ?>
@@ -40,7 +40,7 @@ include("functions/functions.php");
 			?>
                 <!-- For now this is very abstract and it will potentially change, but files correspond to the future feature -->
                 <li><a href='profile.php?<?php echo "u_id=$user_ID" ?>'><?php echo "$first_name"; ?></a></li>
-                <li><a href="home.php">Home</a></li>
+                <li><a href="app.php">Home</a></li>
                 <li><a href="members.php">Find People</a></li>
                 <li><a href="messages.php?u_id=new">Messages</a></li>
 
