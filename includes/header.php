@@ -52,7 +52,7 @@ include("functions/functions.php");
 							<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span><i class='glyphicon glyphicon-chevron-down'></i></span></a>
 							<ul class='dropdown-menu'>
 								<li>
-									<a href='my_post.php?u_id=$user_ID'>My Posts <span class='badge badge-secondary'>$posts</span></a>
+									<a href='my_posts.php?u_id=$user_ID'>My Posts <span class='badge badge-secondary'>$posts</span></a>
 								</li>
 								<li>
 									<a href='edit_profile.php?u_id=$user_ID'>Edit Account</a>
