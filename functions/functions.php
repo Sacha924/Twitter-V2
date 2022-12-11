@@ -205,8 +205,8 @@ function search_user(){
 	global $con;
 
 	if(isset($_GET['search_user_btn'])){
-		$search_query = htmlentities($_GET['search_user']);
-		$get_user="select * from users where username like '%$search_query%' OR l_name like '%$search_query OR f_name like '%$search_query%'";
+		$search_query = htmlentities($_GET['search_user']); 
+		$get_user="select * from users where username like '%$search_query%' OR l_name like '%$search_query%' OR f_name like '%$search_query%'";
 		
 	}
 	else {

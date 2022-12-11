@@ -8,6 +8,7 @@ if(!isset($_SESSION['user_email'])){
 }?>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +19,10 @@ if(!isset($_SESSION['user_email'])){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Find People</title>
 </head>
+
 <body>
     <div class="row">
-       <?php 
+        <?php 
             if(isset($_GET['u_id'])){
                 $u_id = $_GET['u_id'];
             }
@@ -66,7 +68,7 @@ if(!isset($_SESSION['user_email'])){
                 <center>
                 <div style='background-color: #e6e6e6;' class='col-sm-3'>
                 <h2>Information About</h2>
-                <img class='img-circle' src='$image' width='150' height='150'>
+                <img class='img-circle' src='profile_pictures/$image' width='150' height='150'>
                 <br><br>
                 <ul class='list-group'>
                 <li class='list-group-item' title='Username'><strong>$f_name $l_name</strong></li>
@@ -88,7 +90,9 @@ if(!isset($_SESSION['user_email'])){
             }
             ?>
             <div class="col-sm-8">
-                <center><h1><strong><?php echo "$f_name $l_name"; ?></strong>'s Posts</h1></center>
+                <center>
+                    <h1><strong><?php echo "$f_name $l_name"; ?></strong>'s Posts</h1>
+                </center>
                 <?php
                 global $con;
                 if(isset($_GET['u_id'])){
@@ -118,7 +122,7 @@ if(!isset($_SESSION['user_email'])){
                         <div id='own_posts'>
                             <div class='row'>
                                 <div class='col-sm-2'>
-                                    <p><img src='$user_image' class='img-circle' width='100px' height='100px'></p>
+                                    <p><img src='profile_pictures/$user_image' class='img-circle' width='100px' height='100px'></p>
                                 </div>
                                 <div class='col-sm-6'>
                                     <h3><a style='text-decoration: none; cursor: pointer; color: #3897f0;' href='user_profile.php?u_id=$user_id'>$f_name $l_name</a></h3>
@@ -142,7 +146,7 @@ if(!isset($_SESSION['user_email'])){
                             <div id='own_posts'>
                                 <div class='row'>
                                     <div class='col-sm-2'>
-                                        <p><img src='$user_image' class='img-circle' width='100px' height='100px'></p>
+                                        <p><img src='profile_pictures/$user_image' class='img-circle' width='100px' height='100px'></p>
                                     </div>
                                     <div class='col-sm-6'>
                                         <h3><a style='text-decoration: none; cursor: pointer; color: #3897f0;' href='user_profile.php?u_id=$user_id'>$f_name $l_name</a></h3>
@@ -169,4 +173,5 @@ if(!isset($_SESSION['user_email'])){
     </div>
 
 </body>
+
 </html>

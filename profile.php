@@ -135,7 +135,7 @@ if(!isset($_SESSION['user_email'])){
             if(isset($_GET['u_id'])){
                 $u_id = $_GET['u_id'];
             }
-            $get_posts = "select * from posts where user_ID='$u_id' ORDER by 1 DESC LIMIT 5";
+            $get_posts = "select * from posts where user_ID='$user_ID' ORDER by 1 DESC LIMIT 5";
             $run_posts = mysqli_query($con, $get_posts);
 
             while ($row_posts=mysqli_fetch_array($run_posts)){
@@ -275,8 +275,8 @@ if(!isset($_SESSION['user_email'])){
             }
             ?>
         </div>
-            <div class='col-sm-2'>
-            </div>
+        <div class='col-sm-2'>
+        </div>
     </div>
 
 </body>

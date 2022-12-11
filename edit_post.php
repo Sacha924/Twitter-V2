@@ -8,6 +8,7 @@ if(!isset($_SESSION['user_email'])){
 	header("location: index.php");
 }
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,8 +36,11 @@ if(!isset($_SESSION['user_email'])){
                 }
             ?>
             <form action="" method="post" id="f" enctype="multipart/form-data">
-                <center><h2>Edit Your Post</h2></center><br>
-                <textarea class="form-control" id="content" rows="4" name="content"><?php echo $content; ?></textarea><br>
+                <center>
+                    <h2>Edit Your Post</h2>
+                </center><br>
+                <textarea class="form-control" id="content" rows="4"
+                    name="content"><?php echo $content; ?></textarea><br>
                 <button id="btn-post" class="btn btn-info" name="update">Update</button>
             </form>
 
@@ -44,6 +48,7 @@ if(!isset($_SESSION['user_email'])){
                 if(isset($_POST['update'])){
                     $content = $_POST['content'];
                     $update_post = "update posts set post_content='$content' where post_id='$get_id'";
+                    echo $update_post;
                     $run_update = mysqli_query($con, $update_post);
                     if($run_update){
                         echo "<script>alert('Post has been updated!')</script>";
@@ -55,4 +60,5 @@ if(!isset($_SESSION['user_email'])){
 
     </div>
 </body>
+
 </html>
