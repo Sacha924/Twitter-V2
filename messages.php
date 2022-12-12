@@ -224,8 +224,14 @@ if(!isset($_SESSION['user_email'])){
                                 <h2>Information about</h2>
 
                                 <ul class='list-group'>
-                                    <li class='list-group-item' title='Username'><strong>$f_name</strong></li>
+                                    <li class='list-group-item' title='Username'><strong>$username</strong></li>
                                 </ul>
+                                <ul class='list-group'>
+                                <li class='list-group-item' title='FirstName'><strong>$f_name</strong></li>
+                            </ul>
+                            <ul class='list-group'>
+                            <li class='list-group-item' title='Lastname'><strong>$l_name</strong></li>
+                        </ul>
                             </div>
                             <div class='col-sm-1'>
                             </div>
