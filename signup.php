@@ -14,11 +14,9 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="well">
-                <h1>WebPage_Title</h1>
-            </div>
+    <div class="top">
+        <div style="background-color: #068d9d;margin-bottom:5%;">
+            <img src="./images_for_design/image_LogoONNLINE.png" style="margin: 3% 0 3% 35%;width:30%;border-radius:12%;"/>
         </div>
     </div>
     <div class="row">

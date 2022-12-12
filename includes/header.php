@@ -3,6 +3,9 @@ include("connection.php");
 include("functions/functions.php");
 //we don't start the session on this file because we will start the session on the other files that this file can call
 ?>
+<div style="background-color: #068d9d;">
+            <img src="./images_for_design/image_LogoONNLINE.png" style="margin: 0 0 0 43%;width:15%;border-radius:12%;"/>
+</div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -14,12 +17,11 @@ include("functions/functions.php");
                 <span class="icon-bar"></span>
             </button>
             <!-- button is close there so we encompasses all our icon in one button when we are on cellphone or reduce screen size -->
-            <a class="navbar-brand" href="app.php">Application Title</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-
+            
                 <?php 
 			$user = $_SESSION['user_email'];
 			$row=mysqli_fetch_array(mysqli_query($con,"select * from users where email='$user'"));
