@@ -8,13 +8,13 @@ We are 5 students and we’re going to do a Web Development project in this repo
 - [x] SignUp
 - [x] SignIn
 - [x] LogOut
-- [ ] Post Messages
-- [ ] Post answers to a message
-- [ ] Post Images (optionnal)
-- [ ] Direct Messages (optionnal)
+- [x] Post Messages
+- [x] Post answers to a message
+- [x] Post Images (optionnal)
+- [x] Direct Messages (optionnal)
 - [ ] Follow / Unfollow a User
-- [ ] Profile Page
-- [ ] Timeline (view following messages)
+- [x] Profile Page
+- [x] Timeline 
 - [ ] Likes / Unlike (Optionnal)
 
 ## Our Group :
@@ -28,9 +28,9 @@ We are 5 students and we’re going to do a Web Development project in this repo
 ## Our public website has to contain several pages :
 
 - [x] Homepage ( not connected User, SignUp / LogIn )
-- [ ] Home for a conected user ⇒ timeline
-- [ ] Profile Page for a User ( connected User, his followers/following or anybody else in the same instance/software from the fediverse )
-- [ ] User search Page or form to Display the Profile of a User (username@domainname)
+- [x] Home for a conected user ⇒ timeline
+- [x] Profile Page for a User ( connected User, his followers/following or anybody else in the same instance/software from the fediverse )
+- [x] User search Page or form to Display the Profile of a User (username@domainname)
 - [ ] Subscribe Page + email + email checked
 
 ## This is how our serveur program will be construct :
@@ -39,11 +39,15 @@ We are 5 students and we’re going to do a Web Development project in this repo
 - Oubox dispatcher (post local messages to other users (locally or on the network))
 - Programs to answer to website (login / logout / subscribe / follow / unfollow / post messages / post direct messages)
 
-## Least our database has to keep infomation such as :
+## Last our database has to keep infomation such as :
 
-- User
-- Password
-- ID (unique ID on all instances : domain name / number)
+- Users
+
+- Posts 
+ 
+- Comments
+
+- User Messages
 
 # Explanation on the code structure
 
@@ -76,6 +80,18 @@ connection.php : establish the connection with the database
 add_user.php : add the user in the database when he sign
 
 app.php : temp
+
+members.php : allows to search other users profile
+
+messages.php : send direct messages to other accounts
+
+edit_profile.php : the name is pretty self explanatory 
+
+edit_post.php : same here 
+
+delete_post.php : same also here
+
+my_posts.php : page where you can see the user's post 
 
 profile.php : user profile on the website
 
